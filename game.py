@@ -15,22 +15,6 @@ class Game:
 		else:
 			self.player = 'X'
 	
-	# def minimax(self, depth, is_maximizer):
-	# 	score = self.score_map(self.check_winner())
-		
-	# 	if score is not None:
-	# 		return score
-		
-	# 	if is_maximizer:
-	# 		best_score = -1000
-	# 		for i in range(3):
-	# 			for j in range(3):
-	# 				if self.board[i][j] != ' ':
-	# 					continue
-	# 				action = (i, j)
-	# 				self.move(action)
-					
-	
 	def ai_action(self, depth = 0, is_maximizer=True):
 		best_score = None
 		best_action = None
